@@ -1,0 +1,65 @@
+body{
+    padding: 2rem ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.cuerpo{
+    background-image: linear-gradient(#F0E9D2, #678983);
+}
+.gradiente{
+    background-image: linear-gradient(325deg ,#5C33F6, #FBFF00);   
+}
+div{
+    padding: 2rem;
+}
+.gif2{
+    display: none;
+}
+.active{
+    display: flex;
+}
+.active_none{
+    display: none;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.img{
+    height: auto;
+    border-radius: 70%;
+}
+.img:hover{
+    box-shadow: 3px 3px 3px #181D31; 
+    cursor: pointer;
+}
+@keyframes rotar {
+    0%{
+        transform: rotate(45deg)
+    }
+    25%{
+        transform: rotate(90deg)
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    75%{
+        transform:rotate (270deg);
+    }
+    100%{
+        transform:rotate (360deg);
+    }
+}
+.rotacion{
+    animation-name: rotar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
